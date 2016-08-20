@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	background-color: #D4D0C8;
+	font-family: Georgia;
+	font-size: 11pt;
+	overflow-y: scroll;
+}
+
+#page {
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 600px;
+	position: relative;
+	width: 1000px;
+
+	background-color: white;
+	border-left: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	-moz-box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
+}
+
+#header {
+	font-family: Open Sans;
+	font-size: 20pt;
+	font-weight: bold;
+	
+	background-color: #262A2D;
+	background-image: url('/media/img/header_gradient.png');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	color: white;
+	height: 35px;
+	padding: 10px 10px 10px 25px;
+	position: relative;
+	-moz-box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
+}
+
+#content {
+	overflow: hidden;
+	padding: 1em 25px 2em 25px;
+}
+
+/* Content */
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: #008CFF;
+}
+
+h1 {
+	margin-bottom: 0.4em;
+	margin-top: 0;
+	font-family: Open Sans;
+	font-size: 2em;
+}
+
+h2 {
+	color: #008CFF;
+	font-family: Open Sans;
+	font-size: 1.2em;
+}
+
+h3 {
+	font-family: Open Sans;
+	font-size: 1em;
+}
+
+p {
+	margin: 0.67em 0;
+}
+
+.note {
+	border-bottom: 1px solid #eeeeee;
+	margin: 0 0 1em 0;
+	padding: 0 0 1em 0;
+}
+
+.note:last-child {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.note > .info {
+	border-left: 5px solid #eeeeee;
+	margin: 0 0 1em 0;
+	padding: 0 0.5em;
+}
+
+.note > .info > .path {
+	color: #aaaaaa;
+	font-family: Courier New,courier; 
+	font-size: 0.8em;
+	margin: 0 0 1em 0;
+}
+
+.note > .info > .description {
+	margin: 0 0 1em 0;
+	font-size: 0.8em;
+}
+
+.note > .body {
+}
+
+.note > .body > p {
+	margin: 0.2em 0;
+	min-height: 1em;
+}

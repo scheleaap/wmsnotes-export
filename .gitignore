@@ -1,0 +1,9 @@
+*.py[cod]
+
+# Eclipse
+.settings/
+.project
+.pydevproject
+
+# Data
+Notes.nf3

@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'Cambria';
+	src:
+		local('Cambria'),
+		url('/media/font/CAMBRIA.TTC');
+}
+
+@font-face {
+	font-family: 'Cambria';
+	src:
+		local('Cambria Bold'),
+		url('/media/font/CAMBRIAB.TTF');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Cambria';
+	src:
+		local('Cambria Italic'),
+		url('/media/font/CAMBRIAI.TTF');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Cambria';
+	src:
+		local('Cambria Bold Italic'),
+		url('/media/font/CAMBRIAZ.TTF');
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src:
+		local('Corbel'),
+		url('/media/font/CORBEL.TTF');
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src:
+		local('Corbel Bold'),
+		url('/media/font/CORBELB.TTF');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src:
+		local('Corbel Italic'),
+		url('/media/font/CORBELI.TTF');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src:
+		local('Corbel Bold Italic'),
+		url('/media/font/CORBELZ.TTF');
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Silkscreen';
+	src:
+		local('Silkscreen'),
+		url('/media/font/slkscr.ttf');
+}
