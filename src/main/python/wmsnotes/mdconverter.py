@@ -1,7 +1,7 @@
 # coding: utf-8
 """Converts a Nf3Note into Markdown text."""
 
-from __future__ import absolute_import, division, print_function
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 import logging
 from StringIO import StringIO
@@ -18,8 +18,9 @@ class Nf3NoteToMarkdownConverter(object):
 
         md_buffer.write('# {title}\n'.format(title=note.title))
         md_buffer.write('\n')
-        md_buffer.write('{description}\n'.format(description=note.description))
-        md_buffer.write('\n')
+        if note.description != '':
+            md_buffer.write('{description}\n'.format(description=note.description))
+            md_buffer.write('\n')
         md_buffer.write('`{path}`\n'.format(path=note.path))
         md_buffer.write('\n')
 
@@ -48,7 +49,21 @@ class Nf3NoteToMarkdownConverter(object):
             if (event, el.tag) == ('start', '{http://rtf2xml.sourceforge.net/}para'):
                 skip_para = False
 
-                if len(el) == 1 and el[0].text == '(De opsomming hoort genummerd te zijn.)':
+                # Write a newline after the previous paragraph, if necessary
+                if not self._is_list_para(el):
+                    if is_list_active:
+                        logging.debug('Newline after list')
+                        result.write('\n')
+                        number_next_list = False
+                        is_list_active = False
+
+                if self._is_empty_para(el) is None:
+                    # In the future, <para/> elements could be used to distinguish between line breaks and paragraph breaks.
+                    logging.debug('Empty paragraph found')
+                    skip_para = True
+
+                elif len(el) == 1 and el[0].text == '(De opsomming hoort genummerd te zijn.)':
+                    logging.debug('Numbered list indicator found')
                     number_next_list = True
                     skip_para = True
 
@@ -56,32 +71,52 @@ class Nf3NoteToMarkdownConverter(object):
                         and el[0].tag == '{http://rtf2xml.sourceforge.net/}inline' \
                         and el[0].get('bold') == 'true' \
                         and el.get('italic') is None:
+                    logging.debug('Bold header found ("{text}")'.format(text=el.text))
                     result.write('## {title}\n\n'.format(title=el[0].text))
+                    skip_para = True
+
+                elif len(el) == 1 \
+                        and el[0].tag == '{http://rtf2xml.sourceforge.net/}inline' \
+                        and el[0].get('italics') == 'true' \
+                        and el.get('bold') is None:
+                    logging.debug('Italic header found ("{text}")'.format(text=el.text))
+                    result.write('### {title}\n\n'.format(title=el[0].text))
                     skip_para = True
 
                 elif len(el) == 2 \
                         and el[0].text == 'Benodigdheden' \
                         and el[1].text == ' (of: "wat heb ik de laatste keer gebruikt?")':
+                    logging.debug('"Benodigdheden" header found ("{text}", "{tail})"'.format(text=el.text, tail=el.tail))
                     result.write('## {title}\n\n'.format(title=''.join([el[0].text, el[1].text])))
                     skip_para = True
 
-                elif len(el) > 0 and el[0].tag == '{http://rtf2xml.sourceforge.net/}list-text':
+                elif self._is_list_para(el):
                     # This is a list item
                     if number_next_list:
+                        logging.debug('Starting numbered list item')
                         result.write('1. ')
                     else:
+                        logging.debug('Starting bulleted list item')
                         result.write('* ')
                     is_list_active = True
                 else:
                     # This is a normal paragraph
-                    if is_list_active:
-                        number_next_list = False
-                    is_list_active = False
+                    logging.debug('Starting normal paragraph'.format(text=el.text, tail=el.tail))
+                    # if is_list_active:
+                    #     logging.debug('Newline after paragraph')
+                    #     result.write('\n')
+                    #     number_next_list = False
+                    #     is_list_active = False
+
+                    if el.text is not None:
+                        result.write(el.text)
 
             elif (event, el.tag) == ('end', '{http://rtf2xml.sourceforge.net/}para'):
                 if not skip_para:
+                    logging.debug('Ending current line')
                     result.write('\n')
                     if not is_list_active:
+                        logging.debug('Newline after paragraph')
                         result.write('\n')
 
             elif (event, el.tag) == ('start', '{http://rtf2xml.sourceforge.net/}list-text'):
@@ -97,7 +132,7 @@ class Nf3NoteToMarkdownConverter(object):
                     pass
                 else:
                     is_bold = el.get('bold') == 'true'
-                    is_italic = el.get('italic') == 'true'
+                    is_italic = el.get('italics') == 'true'
                     if is_italic:
                         result.write('*')
                     if is_bold:
@@ -107,10 +142,11 @@ class Nf3NoteToMarkdownConverter(object):
                 if skip_para or is_list_text_active:
                     pass
                 else:
+                    logging.debug('Inline ("{text}", "{tail}")'.format(text=el.text, tail=el.tail))
                     result.write(el.text)
 
                     is_bold = el.get('bold') == 'true'
-                    is_italic = el.get('italic') == 'true'
+                    is_italic = el.get('italics') == 'true'
                     if is_italic:
                         result.write('*')
                     if is_bold:
@@ -119,3 +155,9 @@ class Nf3NoteToMarkdownConverter(object):
                     result.write(el.tail)
 
         return result.getvalue()
+
+    def _is_empty_para(self, el):
+        return len(el) == 0 and el.text
+
+    def _is_list_para(self, el):
+        return len(el) > 0 and el[0].tag == '{http://rtf2xml.sourceforge.net/}list-text'
