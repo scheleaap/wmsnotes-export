@@ -1,9 +1,17 @@
+# Python
 *.py[cod]
 
 # Eclipse
 .settings/
 .project
 .pydevproject
+
+# PyCharm
+.idea
+
+# Project
+virtualenv/
+out/
 
 # Data
 Notes.nf3

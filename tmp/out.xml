@@ -17,7 +17,8 @@
 <character-styles><character-style-in-table num="0" name="Default Paragraph Font"/>
 </character-styles>
 
-<styles-in-body><paragraph-style-in-body name="Normal" style-number="s0001" font-style="Arial"/>
+<styles-in-body><paragraph-style-in-body name="Normal" style-number="s0001" font-style="Arial" language="Dutch Standard"/>
+<paragraph-style-in-body name="Normal" style-number="s0002" font-style="Arial"/>
 </styles-in-body>
 </style-table><page-definition margin-right="90" gutter="0" margin-top="72" margin-left="90" margin-bottom="72"/>
 </preamble>
@@ -25,93 +26,155 @@
 
 <body><section num="1" num-in-level="1" type="rtf-native" level="0">
 
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0001" font-style="Arial" language="Dutch Standard">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Pasta + spinazie + tomatensaus + ui + knoflook (meer tomatiger dan spinazieachtig) + vlees of cashewnoten (als vleesvervanger) + peper.</inline></para>
-</paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<para><inline font-size="8.50" bold="true">Benodigdheden</inline><inline font-size="8.50"> (of: "wat heb ik de laatste keer gebruikt?")</inline></para>
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Courgette/paksoi + kip + kerriepoeder + peper + zout + krieltjes/aardappeltjes. Kip eerst marineren.</inline></para>
+<para><inline font-size="8.50">Voor twee ovenschalen (voldoende maar niet ruim voor 6 personen)</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Pasta + ei + spek.</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">18 plakjes bladerdeeg</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Pilaf met kerrie (uit nieuwe Blueband Kookboek).</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">(Grote) pot kersen (pitloos)</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Borscht (en) / borsjt (nl)</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">8 bolletjes gember</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">700 gram kipfilet</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">1 teen knoflook</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">1 &#x00E0; 1,5 zakje kerriesaus van Knorr (2004-10-08: Ik denk dat 1 voldoende is.)</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">1 theelepel sambal</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">2 bekers cr&#x00E8;me fraiche</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">100 gram geraspte kaas</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">(Melk)</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 <para/>
 
-<para><inline font-size="8.50">Van Bjorn de Wagenaar (HTH):</inline></para>
+<para><inline font-size="8.50">2004-10-08: E&#x00E9;n ovenschaal (de grote), voldoende voor 5 personen.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Kip + ketjap manis + ketjap asin + sojasaus + knoflook(poeder) + gemberpoeder+ laos om te marineren.</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">11 plakjes bladerdeeg (met 10 kom je er misschien ook wel)</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Boemboe boontjes + boontjes + kokosmelk + cashewnoten is daar lekker bij.</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">(Kleine) pot kersen (pitloos)</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">7 bolletjes gember</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">560 gram kipfilet</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">2 teentjes knoflook</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">1 zakje kerriesaus van Knorr</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">1 theelepel sambal</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">1 grote beker (200 ml (?)), 1 kleine beker (125 ml (?)) cr&#x00E8;me fraiche</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">100 gram geraspte kaas</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 <para/>
-</paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Groentetaart (zoek bijvoorbeeld naar 'hartige taarten' op de AH-website).</inline></para>
-</paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<para><inline font-size="8.50" bold="true">Bereiding</inline></para>
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Soep.</inline></para>
+<para><inline font-size="8.50">(De opsomming hoort genummerd te zijn.)</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Bloemkool met kaassaus.</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Kip snijden (&amp; kruiden met zout/peper)</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Spruitjes.</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Knoflook fijnsnijden/uitpersen.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Als toetje: peer/appel met crumble (bloem, boter, suiker?) in oven </inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Kersen laten uitlekken.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Aardappelstukjes, bloemkool, kokosmelk, koriander?, kerrie, geelwortel, komijn, daarbij rijst (van Anna, Llink-gerecht: bloemkoolcurry)</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Gember fijnsnijden.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Kipfilet opensnijden, tomaat &amp; mozzarella erin, insmeren met pesto, (parma)ham er omheen, tandenstoker erdoor, in de oven.</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Kip bakken en knoflook erbij.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Rijst, kerriesaus, komkommer, ei (spiegelei/omelet)</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Kerriepoeder direct erbij (dus niet in vocht oplossen!!).</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">In het algemeen in rode saus: met mascarpone</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Gember, sambal, kersen, cr&#x00E8;me fraiche erbij.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Als toetje: appel, kaneel, suiker met kruimeldeeg erover</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">2 minuten zacht laten 'pruttelen'.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Als hapje voor verjaardagen e.d.: bleekselderij met daarin tuinkruidenpat&#x00E9; gewikkeld in gerookte ham</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Bladerdeeg in springvorm/ovenschalen doen en met vork paar keer erin prikken.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Iets met zoethout (zoethout koken tot een saus)</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">De prut erin.</inline></para>
 </paragraph-definition>
-<paragraph-definition name="Normal" style-number="s0001" font-style="Arial">
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
 
-<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Linzensoep</inline></para>
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Kaas over de prut (onder het bladerdeeg).</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">Bladerdeeg erover.</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">De rest van de kaas erover, eventueel met wat melk bestrijken.</inline></para>
+</paragraph-definition>
+<paragraph-definition name="Normal" style-number="s0002" font-style="Arial">
+
+<para><list-text><inline font-style="Symbol">&#x00B7;&#x009;</inline></list-text><inline font-size="8.50">30 - 40 minuten in de oven (op 200 graden voorverwarmd?).</inline></para>
 </paragraph-definition>
 </section>
 
