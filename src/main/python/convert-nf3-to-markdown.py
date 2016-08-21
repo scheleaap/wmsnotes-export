@@ -1,16 +1,21 @@
 # coding: utf-8
+# TODO:
+# - Courier New
+# - Tabs / tables
 
 import argparse
+import io
 import logging
-
+import os
 import sys
 
-from wmsnotes import nf3reader
 from wmsnotes import mdconverter
+from wmsnotes import nf3reader
 
 EXPORT_NOTE_PATH_PREFIXES = (
-    'Koken\\',
-    #	'Ideeën\\',
+    '',
+#    'Koken\\',
+#    'Ideeën\\',
 )
 
 
@@ -26,7 +31,7 @@ def main(args):
 
     # Initialize logging.
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=logging.INFO,
         format='%(asctime)s %(levelname)s %(message)s [%(module)s.%(funcName)s()]',
     )
 
@@ -58,7 +63,12 @@ def process(source, target):
     converter = mdconverter.Nf3NoteToMarkdownConverter()
     for note in notes:
         markdown_note = converter.convert(note)
-        print markdown_note
+        if target == '-':
+            sys.stdout.write(markdown_note)
+            sys.stdout.write('====================\n')
+        else:
+            with(io.open(os.path.join(target, note.title + '.md'), 'w', encoding='utf-8')) as f:
+                f.write(markdown_note)
 
 
 # Initialization.
