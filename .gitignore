@@ -15,3 +15,8 @@ out/
 
 # Data
 Notes.nf3
+tmp/in.rtf
+tmp/out.xml
+
+# Local
+run.bat

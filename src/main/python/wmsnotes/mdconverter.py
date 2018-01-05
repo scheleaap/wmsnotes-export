@@ -16,13 +16,10 @@ class Nf3NoteToMarkdownConverter(object):
     def convert(self, note):
         md_buffer = StringIO()
 
-        md_buffer.write('# {title}\n'.format(title=note.title))
-        md_buffer.write('\n')
+        md_buffer.write('# {title}\n\n'.format(title=note.title))
         if note.description != '':
-            md_buffer.write('{description}\n'.format(description=note.description))
-            md_buffer.write('\n')
-        md_buffer.write('`{path}`\n'.format(path=note.path))
-        md_buffer.write('\n')
+            md_buffer.write('{description}\n\n'.format(description=note.description))
+#        md_buffer.write('`{path}`\n\n'.format(path=note.path.replace('\\', '\\\\')))
 
         body_rtf2xml_xml_string = rtf2xmlconverter.Rtf2XmlConverter().convert(note.rtf)
         body_markdown = self._convert_rtf2xml_xml_to_markdown(body_rtf2xml_xml_string)

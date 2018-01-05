@@ -40,6 +40,8 @@ class Nf3Reader(object):
 		r2 = file.readline().strip().decode('latin1')
 		description = file.readline().strip().decode('latin1')
 		description = description.replace('$@$', '\n')
+		if description == 'Hier kunt u de beschrijving van de note invoeren.':
+			description = ''
 		body = file.readline().strip().decode('latin1')
 		body = body.replace('$@$', '\n')
 		

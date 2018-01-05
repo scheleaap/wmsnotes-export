@@ -13,9 +13,10 @@ from wmsnotes import mdconverter
 from wmsnotes import nf3reader
 
 EXPORT_NOTE_PATH_PREFIXES = (
-    '',
-#    'Koken\\',
-#    'Ideeën\\',
+#    '',
+    u'Koken\\',
+    u'Ideeën',
+    u'Algemeen',
 )
 
 
@@ -67,7 +68,10 @@ def process(source, target):
             sys.stdout.write(markdown_note)
             sys.stdout.write('====================\n')
         else:
-            with(io.open(os.path.join(target, note.title + '.md'), 'w', encoding='utf-8')) as f:
+            note_dir = os.path.join(target, *note.path.split('\\'))
+            if not os.path.exists(note_dir):
+                os.makedirs(note_dir)
+            with(io.open(os.path.join(note_dir, note.title + '.md'), 'w', encoding='utf-8')) as f:
                 f.write(markdown_note)
 
 
