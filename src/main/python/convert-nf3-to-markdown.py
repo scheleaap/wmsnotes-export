@@ -13,10 +13,10 @@ from wmsnotes import mdconverter
 from wmsnotes import nf3reader
 
 EXPORT_NOTE_PATH_PREFIXES = (
-#    '',
-    u'Koken\\',
-    u'Ideeën',
-    u'Algemeen',
+    '',
+    # u'Koken\\',
+    # u'Ideeën',
+    # u'Algemeen',
 )
 
 
