@@ -71,7 +71,7 @@ def process(source, target):
             note_dir = os.path.join(target, *note.path.split('\\'))
             if not os.path.exists(note_dir):
                 os.makedirs(note_dir)
-            with(io.open(os.path.join(note_dir, note.title + '.md'), 'w', encoding='utf-8')) as f:
+            with(io.open(os.path.join(note_dir, note.title + '.md'), 'w', encoding='utf-8', newline='\n')) as f:
                 f.write(markdown_note)
 
 
